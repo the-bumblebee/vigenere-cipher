@@ -49,7 +49,7 @@ def main():
 	elif args.encrypt_flag == False and args.message != None and args.key != None:
 		message = args.message
 		key = args.key
-		print('Decrypted message:\n' +  encrypt(message, key))
+		print('Decrypted message:\n' +  decrypt(message, key))
 
 	else:
 		parser.print_help()
